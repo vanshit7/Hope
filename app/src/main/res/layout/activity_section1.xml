@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vanshit.minihope.Section1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/b"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgbutupload"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:src="@drawable/upload"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:longClickable="true"
+        android:layout_above="@+id/editname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editname"
+        android:textSize="20dp"
+        android:minWidth="250dp"
+        android:minHeight="15dp"
+        android:hint="Name"
+        android:layout_above="@+id/editPhone"
+        android:layout_alignStart="@+id/imgbutupload"
+        android:layout_alignParentEnd="true" />;
+        android:textColor="#121111"
+        android:layout_marginBottom="55dp"
+        android:layout_alignBottom="@+id/editAdd"
+        android:layout_alignStart="@+id/imgbutupload"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAdd"
+        android:minHeight="20dp"
+        android:minWidth="170dp"
+        android:textSize="20dp"
+        android:hint="Address"
+        android:layout_below="@+id/editPhone"
+        android:layout_alignStart="@+id/editProblem0"
+        android:layout_alignEnd="@+id/editname" />;
+        android:layout_below="@+id/imgbutupload"
+        android:layout_alignStart="@+id/editname"
+        android:layout_alignEnd="@+id/editname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPhone"
+        android:hint="Numeric"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editAdd"
+        android:inputType="number"
+        android:layout_alignEnd="@+id/editname" />;
+        android:minHeight="15dp"
+        android:minWidth="250dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editProblem0"
+        android:hint="Problem Description"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imgbutupload"
+        android:layout_marginBottom="130dp"
+        android:layout_alignEnd="@+id/editname" />;
+        android:minHeight="15dp"
+        android:minWidth="250dp"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editProblem1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editProblem0"
+        android:layout_marginBottom="88dp"
+        android:layout_alignEnd="@+id/editProblem0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editProblem2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editProblem1"
+        android:layout_marginBottom="48dp"
+        android:layout_alignEnd="@+id/editProblem1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:id="@+id/butreg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgview"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/imgbutupload"
+        android:layout_alignEnd="@+id/imgbutupload"
+        android:layout_alignBottom="@+id/imgbutupload"
+        android:layout_alignStart="@+id/imgbutupload" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="    Uplaod Photo"
+        android:id="@+id/textView3"
+        android:textColor="#121111"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/imgbutupload"
+        android:layout_alignStart="@+id/imgbutupload" />
+
+
+</RelativeLayout>
