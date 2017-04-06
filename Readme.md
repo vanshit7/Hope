@@ -1,0 +1,1 @@
+An app which takes user information like name,phone no ,upload photo etc. with proper validation checks and then stores the user information in a Database and then prints the information in a different activity.
